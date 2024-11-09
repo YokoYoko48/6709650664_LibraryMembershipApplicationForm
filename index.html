@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Membership Form</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <div class="container">
+        <h2>ฟอร์มสมัครสมาชิกห้องสมุด</h2>
+        <form>
+            <label for="name-thai">ชื่อ – นามสกุล (ภาษาไทย) *</label>
+            <input type="text" id="name-thai" name="name-thai" required>
+
+            <label for="name-eng">Full Name (English) *</label>
+            <input type="text" id="name-eng" name="name-eng" required>
+
+            <label>เพศ *</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">หญิง</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">อื่น ๆ</label>
+            </div>
+
+            <label for="student-id">รหัสนักศึกษา *</label>
+            <input type="text" id="student-id" name="student-id" required>
+
+            <label for="faculty">คณะที่ศึกษา *</label>
+            <input type="text" id="faculty" name="faculty" required>
+
+            <label for="email">ที่อยู่อีเมล *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dob">วันเดือนปีเกิด *</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="book-type">ประเภทของหนังสือที่สนใจ</label>
+            <select id="book-type" name="book-type">
+                <option value="fiction">นิยาย</option>
+                <option value="non-fiction">สารคดี</option>
+                <option value="sci-fi">วิทยาศาสตร์</option>
+                <option value="self-help">พัฒนาตนเอง</option>
+                <option value="other">อื่น ๆ</option>
+            </select>
+
+            <label>ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมล</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">ต้องการรับข่าวสาร</label>
+            </div>
+
+            <button type="submit">สมัครสมาชิก</button>
+        </form>
+    </div>
+</body>
+</html>
